@@ -22,11 +22,18 @@
     <header id="header-container">
       <div class="container">
         <div class="row flex-items-xs-middle flex-items-xs-center flex-items-md-around ">
-          <div class="col-xs-12 col-md-6 text-xs-center text-lg-left columna">
-            <h1>Crea3d</h1>
+          <div class="col-xs-9  col-sm-10 col-md-6 text-xs-left text-sm-center text-md-left columna">
+            <h1 class="hidden-xs-down">Prosoft Print3r</h1>
+            <h3 class="hidden-sm-up">Prosoft Print3r</h3>
           </div>
-          <div class="col-xs-12 col-md-6  text-xs-center  text-lg-right columna">
-            Haz que tu idea sea una realidad
+          <div class="col-xs-1 col-sm-2 col-md-6  text-xs-center  text-md-right columna">
+            <span class="hidden-sm-down text-uppercase font-weight-bold">
+                Carrito
+              </span>
+              <i class=" fa fa-shopping-cart"></i>
+          </div>
+          <div class="col-xs-1 hidden-sm-up text-md-left">
+             <button class="navbar-toggler   " data-toggle="collapse" data-target="#navMenu">&#9776;</button>
           </div>
         </div>
       </div>
@@ -34,37 +41,36 @@
    <!-- /header -->
 
    <!-- Menu -->
-   <nav id="menu-container" class="navbar navbar-light">
-    <div class="container">
-        <div class="row">
-          <div class="col-xs-10 col-md-7">
-            <ul class="nav navbar-nav">
-              <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Quienes Somos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contacto</a>
-              </li>
-            </ul>
+   <div id="menu-container">
+     <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <ul class="nav navbar-nav text-xs-center">
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link hidden-sm-up">Carrito</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        <div class="col-xs-12 col-md-4 offset-md-1">
-        <span class="hidden-sm-down">
-          Carrito
-        </span>
-        <i class="fa fa-shopping-cart"></i>
-        </div>
-        </div>
-        </div>
-   </nav>
+      </div>
+     </nav>
+    </div>
 
    <!-- /Menu -->
 
