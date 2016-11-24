@@ -1,0 +1,20 @@
+body{
+	font-family: 'Libre Franklin', sans-serif;
+	background-color: #ffecf0;
+}
+
+#header-container{
+	background-color: #8B1A34;
+	color:white;
+	padding: .8em;
+	
+}
+
+#header-container .container {
+
+}
+
+#menu-container{
+	background-color: #f5eeff;
+}
+

@@ -1,7 +1,7 @@
 {
   "name": "PagWebVentas",
   "version": "1.0.0",
-  "description": "",
+  "description": "pagina web de ventas con nodejs",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +16,13 @@
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrodreyes/WebVentas3d.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lrodreyes/WebVentas3d/issues"
+  },
+  "homepage": "https://github.com/lrodreyes/WebVentas3d#readme"
 }
