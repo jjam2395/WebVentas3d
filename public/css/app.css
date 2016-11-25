@@ -13,10 +13,6 @@ body{
 	color: white;
 }
 
-#header-container .container {
-
-}
-
 #menu-container{
 	background-color: #f5eeff;
 }
@@ -26,8 +22,36 @@ a
 	color: white;
 	text-decoration: none;
 }
-
-#inicio-container{
-	padding: 1em 0;
+a:hover{
+	color:#A0BBCD;
 }
+
+
+.jumbotron{
+	margin: 0;
+}
+
+
+#footer-container
+{
+	background-color:#153F5D;
+	color: white;
+	padding: 3em 0;
+}
+
+#footer-container h4{
+	font-size: 16px;
+}
+
+@media (max-width: 768px){
+	#footer-container [class*="col-"]
+	{
+		margin-bottom: 2em;
+	}
+}
+
+
+
+
+
 
