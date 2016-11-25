@@ -1,0 +1,29 @@
+body{
+	font-family: 'Libre Franklin', sans-serif;
+
+}
+
+#header-container{
+	background-color: #456F8D;
+	color:white;
+	padding: .8em;
+}
+
+#header-container .navbar-toggler{
+	color: white;
+}
+
+#header-container .container {
+
+}
+
+#menu-container{
+	background-color: #f5eeff;
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
