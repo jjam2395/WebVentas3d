@@ -11,6 +11,11 @@ app.get("/",function(req,res)
 	res.render("index"); 
 });
 
+app.get("/catalogo",function(req,res)
+{
+	res.render("catalogo"); 
+});
+
 
 server.listen(8080,function(){
   console.log("Server running on port 8080");
