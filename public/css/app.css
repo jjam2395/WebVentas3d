@@ -85,7 +85,26 @@ a:hover{
 }
 
 @media (max-width: 768px) {
-  #productos-container .filtros-toggle {
-    margin-bottom: 1em;
-  }
+  .lista-productos{
+	margin-top: 2em;
+	}
+
+	.lista-productos .card-img-top{
+		width: 100%;
+	}
 }
+
+.pagination-container {
+  margin-bottom: 0 !important;
+}
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+  background-color: #456F8D;
+  border-color: #456F8D;
+}
+
+.page-link, .page-link:focus, .page-link:hover {
+  color: #456F8D;
+}
+
+
