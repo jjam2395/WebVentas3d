@@ -14,18 +14,100 @@
       <%- include("menu") -%>
    <!-- /Menu -->
 
-
-  <!-- /inicio -->
-
-  <!-- productos -->
-    <div class="row">
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="/estatico/imagenes/productos/">
-        </div>       
+<!-- inicio -->
+<!--breadcrumb -->
+    <div id="breadcrumbs-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs">
+            <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="#">Home</a>
+              <a class="breadcrumb-item" href="#">Catálogo</a>
+              <span class="breadcrumb-item active">Todos los productos</span>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
-  <!-- productos -->
+
+<!--breadcrumb -->
+  <!-- Productos -->
+
+    <div id="productos-container">
+      <div class="container">
+        <div class="row">
+        <!-- Filtros -->
+
+        <div class="col-xs-12 col-md-3">
+          <div class="list-group filtros-toggle">
+            <a id="filtrosToggle" href="#" class="list-group-item list-group-item-action navbar-toggler hidden-sm-up" data-target="#filtros-container" data-toggle="collapse">
+              <h5 class="list-group-item-heading">Filtros <i class="fa fa-chevron-down"></i></h5>
+            </a>
+          </div>
+          <div id="filtros-container" class="collapse navbar-toggleable-xs">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                <h5 class="list-group-item-heading">Categoría</h5>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Oficina <span class="tag tag-pill tag-default pull-xs-right">174</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Regalos <span class="tag tag-pill tag-default pull-xs-right">143</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Accesorios <span class="tag tag-pill tag-default pull-xs-right">130</span>
+              </a>
+            </div>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                <h5 class="list-group-item-heading">Temporada</h5>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action "> Mes Patrio</a>
+              <a href="#" class="list-group-item list-group-item-action "> Navideña</a>
+              <a href="#" class="list-group-item list-group-item-action "> Mes del Amor y la Amistad</a>
+              <a href="#" class="list-group-item list-group-item-action "> Dia de muertos</a>
+            </div>
+
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                <h5 class="list-group-item-heading">Ofertas</h5>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="D">
+                    Productos con descuento
+                  </label>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="E">
+                    Envio gratis
+                  </label>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- /Filtros -->
+
+        <!-- Listado -->
+
+        <div class="col-xs-12 col-md-9">
+          Productos
+        </div>
+
+        <!-- /Listado -->
+        </div>
+      </div>
+    </div>
+    <!-- /Productos -->
+  <!-- /inicio -->
 
   <!-- footer -->
   <footer id="footer-container">
@@ -51,7 +133,7 @@
                   <a href="catalogo" class="nav-link">Productos</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Preguntas Frecuentes</a>
+                  <a href="#" class="nav-link">FAQ</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">Quienes Somos</a>
@@ -60,20 +142,43 @@
                   <a href="#" class="nav-link hidden-sm-up">Carrito</a>
                 </li>
           </ul>
-
-
         </div>
       </div>
     </div>
   </footer>
-
   <!-- /footer -->
-
+  <!-- Modal -->
+    <div class="modal fade" id="modalOferta" tabindex="-1" role="dialog" aria-labelledby="modalOfertaLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modalOfertaLabel">Oferta exclusiva del mes de Noviembre</h4>
+          </div>
+          <div class="modal-body">
+            Suscribete hoy y recibe $50.00 Mxn de descuento!
+            <form action="#" class="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="tu@correo.com" name="email">
+                <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con nadie más</small>
+              </div>
+              <button type="submit" class="btn btn-success form-text">Suscribirme</button>
+              <button id="btnNoRegistrar" type="button" class="btn btn-warning form-text" data-dismiss="modal">No, no quiero el descuento</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script src="/estatico/js/app.js"></script>
+    <script>
+      mostrarModal()
+    </script>
   </body>
 </html>
-

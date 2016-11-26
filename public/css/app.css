@@ -51,7 +51,41 @@ a:hover{
 }
 
 
+#breadcrumbs-container .breadcrumb {
+  background-color: #456F8D;
+  margin: 1em 0;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item {
+	color: #fff;
+  
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item.active {
+  color: #A0BBCD;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+  content: "->";
+}
 
 
+#productos-container {
+  margin-bottom: 2em;
+}
 
+#productos-container .list-group-item-action.active {
+  background-color: #2A5675;
+  border-color: #153F5D;
+}
 
+#productos-container .list-group+.list-group {
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+@media (max-width: 768px) {
+  #productos-container .filtros-toggle {
+    margin-bottom: 1em;
+  }
+}
