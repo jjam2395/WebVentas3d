@@ -2,7 +2,7 @@ const $form = $('#suscribeForm')
 const $formGroup = $form.find('.form-group')
 const $formControl = $formGroup.find('.form-control')
 
-$form.submit(function (ev) {
+$form.submit((ev) =>{
 	ev.preventDefault()
 
 	const error =  Math.random() > 0.5
@@ -24,6 +24,15 @@ $form.submit(function (ev) {
 })
 
 
+
 function mostrarModal() {
-	alert('hola este va a ser el model de oferta')
+  console.log()
+  if (!JSON.parse(localStorage.noMostrarModal)) {
+    $('#modalOferta').modal()
+    localStorage.noMostrarModal = true
+  }
+
+  $('#btnNoRegistrar').click((ev) => {
+    localStorage.noMostrarModal = true
+  })
 }
