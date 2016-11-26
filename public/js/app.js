@@ -24,3 +24,6 @@ $form.submit(function (ev) {
 })
 
 
+function mostrarModal() {
+	alert('hola este va a ser el model de oferta')
+}
