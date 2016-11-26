@@ -2,77 +2,16 @@
 <html lang="en">
   <head>
     <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <%- include("head") -%>
+  <head>
 
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
-
-            <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-
-    
-    <link href="/estatico/css/bootstrap-flex.min.css" rel="stylesheet">
-    <link href="/estatico/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/estatico/css/app.css" rel="stylesheet">
-  </head>
   <body>
-
-  <!-- header -->
-    <header id="header-container">
-      <div class="container">
-        <div class="row flex-items-xs-middle flex-items-xs-center flex-items-md-around ">
-          <div class="col-xs-9  col-sm-10 col-md-6 text-xs-left text-sm-center text-md-left columna">
-            <h1 class="hidden-xs-down">Prosoft Print3r</h1>
-            <h3 class="hidden-sm-up">Prosoft Print3r</h3>
-          </div>
-          <div class="col-xs-1 col-sm-2 col-md-6  text-xs-center  text-md-right columna">
-            <a href="#"><i class=" fa fa-shopping-cart"></i></a>
-            <span class="hidden-sm-down text-uppercase font-weight-bold">
-                <a  class="nav-link" href="#">Carrito</a>
-              </span>
-              
-          </div>
-          <div class="col-xs-1 hidden-sm-up text-md-left">
-             <button class="navbar-toggler   " data-toggle="collapse" data-target="#navMenu">&#9776;</button>
-          </div>
-        </div>
-      </div>
-    </header>
-   <!-- /header -->
+  <!-- header se importa el archivo -->
+      <%- include("header") -%>
+  <!-- /header -->
 
    <!-- Menu -->
-   <div id="menu-container">
-     <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
-      <div class="container">
-          <div class="row">
-            <div class="col-xs-12 ">
-              <ul class="nav navbar-nav text-xs-center">
-                <li class="nav-item active">
-                  <a href="/" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="catalogo" class="nav-link">Productos</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Preguntas Frecuentes</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#footer-container" class="nav-link">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link hidden-sm-up">Carrito</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </div>
-     </nav>
-    </div>
-
+      <%- include("menu") -%>
    <!-- /Menu -->
 
 <!-- inicio -->
