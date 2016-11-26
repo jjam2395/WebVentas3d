@@ -107,4 +107,13 @@ a:hover{
   color: #456F8D;
 }
 
+.btn-primary
+{
+	background-color: #2A5675;
+}
 
+
+.btn-primary:hover
+{
+	background-color: #153F5D;
+}
