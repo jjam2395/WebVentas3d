@@ -27,6 +27,10 @@ app.get("/setcarrito",function(req,res)
 	console.log(req.query.id);
 });
 
+app.get("/carrito",function(req,res)
+{
+	res.render("carrito"); 
+});
 
 server.listen(8080,function(){
   console.log("Server running on port 8080");
