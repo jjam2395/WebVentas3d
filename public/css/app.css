@@ -48,6 +48,9 @@ a:hover{
 	{
 		margin-bottom: 2em;
 	}
+	.titulo-producto{
+		margin-top: 1em;
+	}
 }
 
 
@@ -120,4 +123,12 @@ a:hover{
 
 .precio{
 	color:#41c3ff; 
+}
+
+.producto-carrito{
+	padding: 1em;
+}
+
+.linkblue{
+	color: #41c3ff;
 }
