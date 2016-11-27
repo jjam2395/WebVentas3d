@@ -1,16 +1,17 @@
 var express=require("express");//importamos el servidor de express
 var app=express();//ejecutamos el servidor de express
-var cookieSession=require("cookie-session");
+//var cookieSession=require("cookie-session");
 server=require("http").Server(app);//crear servidor con http y pasarle la aplicacion express
 
 app.set("view engine","ejs");
 app.use("/estatico",express.static('public'));
-app.use(cookieSession(
+/*app.use(cookieSession(
 {
        name: "session",
        keys: ["llave1","llave2"]
-}));
+}));*/
 
+var productos=[];
 
 app.get("/",function(req,res)
 {
@@ -24,7 +25,9 @@ app.get("/catalogo",function(req,res)
 
 app.get("/setcarrito",function(req,res)
 {
-	console.log(req.query.id);
+	//req.session.id=req.query.id;
+	productos.push(req.query)//agregamos el producto al arreglo
+	console.log(req.query);
 });
 
 app.get("/carrito",function(req,res)
