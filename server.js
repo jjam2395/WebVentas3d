@@ -30,9 +30,15 @@ app.get("/setcarrito",function(req,res)
 	console.log(req.query);
 });
 
+app.get("/getcarrito",function(req,res)
+{
+  	res.header("Access-Control-Allow-Origin","*");
+  	res.send(productos);
+});
+
 app.get("/carrito",function(req,res)
 {
-	res.render("carrito"); 
+	res.render("carrito");
 });
 
 server.listen(8080,function(){
