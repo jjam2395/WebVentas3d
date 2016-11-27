@@ -22,6 +22,12 @@ app.get("/catalogo",function(req,res)
 	res.render("catalogo"); 
 });
 
+app.get("/carrito",function(req,res)
+{
+	res.render("carrito"); 
+});
+
+
 
 server.listen(8080,function(){
   console.log("Server running on port 8080");
