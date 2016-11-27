@@ -25,17 +25,17 @@ $form.submit((ev) =>{
 
 
 
-function mostrarModal() {
-  console.log()
-  if (!JSON.parse(localStorage.noMostrarModal)) {
-    $('#modalOferta').modal()
-    localStorage.noMostrarModal = true
-  }
+// function mostrarModal() {
+//   console.log()
+//   if (!JSON.parse(localStorage.noMostrarModal)) {
+//     $('#modalOferta').modal()
+//     localStorage.noMostrarModal = true
+//   }
 
-  $('#btnNoRegistrar').click((ev) => {
-    localStorage.noMostrarModal = true
-  })
-}
+//   $('#btnNoRegistrar').click((ev) => {
+//     localStorage.noMostrarModal = true
+//   })
+// }
 
 const $filtrosToggle = $('#filtrosToggle')
 $filtrosToggle.click((ev) => {
