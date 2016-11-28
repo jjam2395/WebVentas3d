@@ -80,6 +80,7 @@ $(document).ready(function()
               </div>`;
 
         document.getElementById("productos").innerHTML=html;
+        $.get('http://localhost:8080/setTotal',{total:total});
       });
 });
 

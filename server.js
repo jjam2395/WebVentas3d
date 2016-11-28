@@ -12,6 +12,8 @@ app.use("/estatico",express.static('public'));
 }));*/
 
 var productos=[];
+var totalcompra;
+var datosPersonales;
 
 app.get("/",function(req,res){
 	res.render("index"); 
@@ -39,6 +41,11 @@ app.get("/carrito",function(req,res){
 app.get("/datos",function(req,res)
 {
 	res.render("datos"); 
+});
+
+app.get("/setTotal",function(req,res)
+{
+	totalcompra=req.query.total;
 });
 
 server.listen(8080,function(){
