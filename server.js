@@ -41,6 +41,11 @@ app.get("/datos",function(req,res)
 	res.render("datos"); 
 });
 
+app.get("/pago",function(req,res)
+{
+	res.render("pago"); 
+});
+
 server.listen(8080,function(){
   console.log("Server running on port 8080");
 })
