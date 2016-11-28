@@ -43,7 +43,7 @@
 <div class="formulario-container">
   <div class="container">
     <div class="producto-carrito card" data-example-id="">
-<form>
+<form action="pago.ejs">
 <div class="form-group row">
     <label class="col-xs-12 col-md-2 col-form-label text-md-right" for="nombre-datos">Nombre:</label>
     <div class="col-xs-12 col-md-10">
@@ -113,7 +113,7 @@
 
   <div class="form-group row">
     <div class="col-xs-12 text-xs-center">
-      <button type="submit" href="pago" onclick="datos()" class="btn btn-primary">Comprar</button>
+      <a id="comprar" href="pago" class="btn btn-primary">Comprar</a>
     </div>
   </div>
 </form>

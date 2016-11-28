@@ -3,9 +3,9 @@ $(document).ready(function()
   var productos=[
   {id:"2", nombre:"chikorita", descripcion:"Modelo a escala de chikorita",precio:"60",direccion:"estatico/images/productos/chicorita.jpg"},
   {id:"1",nombre:"Case para Iphone6", descripcion:"Case estilo Halo",precio:"150",direccion:"estatico/images/productos/caseiphone.jpg"},
-  {id:"3",nombre:"Case raspberry",descripcion:"protector para raspberry 3b",precio:"120",direccion:"estatico/images/productos/caserasberry.png"},
-  {id:"4",nombre:"reloj", descripcion:"reloj de pared personalizable",precio:"100",direccion:"estatico/images/productos/prod1.png"},
-  {id:"5",nombre:"stand iphone",descripcion:"base para iphone",precio:"110",direccion:"estatico/images/productos/standiphone.jpg"},];
+  {id:"3",nombre:"Case raspberry",descripcion:"Protector para raspberry 3b",precio:"120",direccion:"estatico/images/productos/caseraspberry.png"},
+  {id:"4",nombre:"Reloj", descripcion:"reloj de pared personalizable",precio:"100",direccion:"estatico/images/productos/prod1.png"},
+  {id:"5",nombre:"Soporte iphone",descripcion:"base para iphone",precio:"110",direccion:"estatico/images/productos/standiphone.jpg"},];
 
   Array.prototype.indexOfOld=Array.prototype.indexOf
 

@@ -1,0 +1,113 @@
+ <!-- <!DOCTYPE html>
+
+  <html>
+  <head>
+    <link href="bootstrap-flex.min.css" rel="stylesheet">
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet"> 
+  </head>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+   <%- include("head") -%>
+  <head>
+
+  <body>
+  <!-- header se importa el archivo -->
+      <%- include("header") -%>
+  <!-- /header -->
+
+   <!-- Menu -->
+      <%- include("menu") -%>
+   <!-- /Menu -->
+
+
+<body>
+    <!--breadcrumb -->
+    <div id="breadcrumbs-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="catalogo">Todos los productos</a>
+            <a class="breadcrumb-item" href="carrito">Carrito</a>
+            <a class="breadcrumb-item" href="datos">Datos Personales</a>
+            <a class="breadcrumb-item" href="pago">Metodo de Pago</a>
+              <span class="breadcrumb-item active" href="#">Compra Concluida</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--breadcrumb -->
+
+
+          <div id="info-container">
+            <div class="jumbotron">
+              <div class="container">
+                  <h1 class="display-3">Gracias por tu compra!</h1>
+                  <p class="lead">Nos pondremos en contacto contigo por medio de correo electronico</p>
+                  <hr class="my-2">
+                  <p class="lead">Esperamos verte pronto de vuelta</p>
+              </div>
+            </div>
+          </div>
+<!--
+    <script src="jquery.min.js"</script>
+    <script src="tether.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="app.js"></script>
+-->
+
+  <!-- footer -->
+  <footer id="footer-container">
+    <div class="container">
+      <div class="row text-xs-center text-md-left">
+        <div class="col-md-4">
+          <form id="suscribeForm" action="#" > <!-- method=¨POST"-->
+            <h4 class="text-uppercase">¿Quieres recibir todas las novedades?</h4>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
+              <small class="form-text text-muted">No compartiremos tu información con nadie más</small>
+            </div>
+            <button type="submit" class="btn btn-primary form-text"> Suscribirme</button>
+          </form>
+        </div>
+        <div class="col-md-3 offset-md-5 navf">
+          <h4> Navegación</h4>
+          <ul class="nav">
+             <li class="nav-item">
+                  <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="catalogo" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="carrito" class="nav-link hidden-sm-up">Carrito</a>
+                </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- /footer -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <%- include("js") -%>
+
+    <!-- JS -->
+  </body>
+</html>
