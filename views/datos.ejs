@@ -1,0 +1,151 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <%- include("head") -%>
+  <head>
+  <body>
+
+  <!-- header -->
+      <%- include("header") -%>
+   <!-- /header -->
+
+   <!-- Menu -->
+      <%- include("menu") -%>
+   <!-- /Menu -->
+
+<!-- inicio -->
+<!--breadcrumb -->
+    <div id="breadcrumbs-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs">
+            <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="catalogo">Todos los productos</a>
+            <a class="breadcrumb-item" href="carrito">Carrito</a>
+              <span class="breadcrumb-item active" href="#">Datos personales</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--breadcrumb -->
+  
+<!-- inicio -->
+
+<!-- formulario-container -->
+
+
+
+
+
+<div class="formulario-container">
+  <div class="container">
+    <div class="bd-example" data-example-id="">
+<form>
+<div class="form-group">
+    <label for="nombre-datos">Nombre</label>
+    <input type="text" class="form-control" id="nombre-datos" name="nombre-datos" aria-describedby="nombre-help" placeholder="Escribe tu nombre" required>
+    <small id="nombre-help" class="form-text text-muted">La persona que recibirá el paquete</small>
+</div>
+<div class="form-group">
+    <label for="telefono-datos">Telefono</label>
+    <input type="tel" class="form-control" id="telefono-datos" name="telefono-datos" aria-describedby="telefono-help" placeholder="Escribe tu telefono con lada" required>
+    <small id="telefono-help" class="form-text text-muted">Unicamente se usará en caso de algun problema en paqueteria</small>
+</div>
+<div class="form-group">
+    <label for="calle-datos">Calle</label>
+    <input type="text" class="form-control" id="calle-datos" name="calle-datos" required  placeholder="Calle y numero">
+</div>
+<div class="form-group">    
+    <label for="colonia-datos">Colonia</label>
+    <input type="text" class="form-control" id="colonia-datos" name="colonia-datos"  required placeholder="Tu Colonia">
+</div>
+<div class="form-group">    
+    <label for="cp-datos">Codigo Postal</label>
+    <input type="text" class="form-control" id="cp-datos" name="cp-datos" required placeholder="Calle y numero">
+</div>
+<div class="form-group">
+    <label for="edo-datos">Estado</label>
+    <input type="text" class="form-control" id="edo-datos" name="edo-datos" required>
+</div>
+<div class="form-group">
+    <label for="ciudad-datos">Ciudad / Municipio</label>
+    <input type="text" class="form-control" id="ciudad-datos" name="ciudad-datos" required>
+</div>
+
+<div class="form-group">
+  <label for="email-datos">Correo electronico</label>
+    <input type="email" class="form-control" id="email-datos" name="email-datos" required aria-describedby="email-help" placeholder="Tu@email.com">
+    <small id="email-help" class="form-text text-muted">No compartiremos tu email con nadie,  nos pondremos en contacto por medio de el, es muy importante</small>
+</div>
+
+<div class="form-group">
+  <label for="comentario-datos">Comentarios acerca de tu compra:</label>
+  <textarea class="form-control" placeholder="Escribe si tienes algun comentario, o detalles como si necesitas especificar color" id="comentario-datos" rows="3"></textarea>
+</div>
+
+  <button type="submit" class="btn btn-primary">Comprar</button>
+</form>
+</div>
+  </div>  
+
+</div>
+
+
+<!-- / formulario-container -->
+
+
+
+<!-- /inicio -->
+
+  <!-- footer -->
+  <footer id="footer-container">
+    <div class="container">
+      <div class="row text-xs-center text-md-left">
+        <div class="col-md-4">
+          <form id="suscribeForm" action="#" > <!-- method=¨POST"-->
+            <h4 class="text-uppercase">¿Quieres recibir todas las novedades?</h4>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
+              <small class="form-text text-muted">No compartiremos tu información con nadie más</small>
+            </div>
+            <button type="submit" class="btn btn-primary form-text"> Suscribirme</button>
+          </form>
+        </div>
+        <div class="col-md-3 offset-md-5 navf">
+          <h4> Navegación</h4>
+          <ul class="nav">
+             <li class="nav-item">
+                  <a href="/"" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="catalogo" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link hidden-sm-up">Carrito</a>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+ 
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="/estatico/js/app.js"></script>
+    <script>
+      mostrarModal()
+    </script>
+  </body>
+</html>
