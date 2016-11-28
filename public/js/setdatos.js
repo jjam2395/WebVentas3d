@@ -1,8 +1,7 @@
-// function datos()
-// {
-// 	console.log("se llamo a la funcion");
-// }
-
 $(document).ready(function() {
 	console.log("elemento listo");
+	$("#comprar").click(function()
+	{
+		console.log($("#nombre-datos").val());
+	});
 });
