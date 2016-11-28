@@ -46,7 +46,6 @@ app.get("/datos",function(req,res)
 app.get("/setTotal",function(req,res)
 {
 	totalcompra=req.query.total;
-
 });
 
 app.get("/pago",function(req,res)
@@ -56,6 +55,6 @@ app.get("/pago",function(req,res)
 
 server.listen(8080,function(){
   console.log("Server running on port 8080");
-});
+})
 
 
