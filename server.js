@@ -14,6 +14,7 @@ app.use("/estatico",express.static('public'));
 var productos=[];
 var totalcompra;
 var datosPersonales;
+var datosTarjeta;
 
 app.get("/",function(req,res){
 	res.render("index"); 
@@ -46,6 +47,16 @@ app.get("/datos",function(req,res)
 app.get("/setTotal",function(req,res)
 {
 	totalcompra=req.query.total;
+});
+
+app.get("/setDatos",function(req,res)
+{
+	datosPersonales=req.query;
+});
+
+app.get("/setTarjeta",function(req,res)
+{
+	datosTarjeta=req.query;
 });
 
 app.get("/pago",function(req,res)
