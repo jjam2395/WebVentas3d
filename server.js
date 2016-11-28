@@ -13,31 +13,26 @@ app.use("/estatico",express.static('public'));
 
 var productos=[];
 
-app.get("/",function(req,res)
-{
+app.get("/",function(req,res){
 	res.render("index"); 
 });
 
-app.get("/catalogo",function(req,res)
-{
+app.get("/catalogo",function(req,res){
 	res.render("catalogo"); 
 });
 
-app.get("/setcarrito",function(req,res)
-{
+app.get("/setcarrito",function(req,res){
 	//req.session.id=req.query.id;
-	productos.push({id:req.query.id,cantidad:0})//agregamos el producto al arreglo
+	productos.push({id:req.query.id})//agregamos el producto al arreglo
 	console.log(req.query);
 });
 
-app.get("/getcarrito",function(req,res)
-{
+app.get("/getcarrito",function(req,res){ //enviar el arreglo de productos{
   	res.header("Access-Control-Allow-Origin","*");
   	res.send(productos);
 });
 
-app.get("/carrito",function(req,res)
-{
+app.get("/carrito",function(req,res){
 	res.render("carrito");
 });
 
