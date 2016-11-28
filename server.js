@@ -26,7 +26,7 @@ app.get("/catalogo",function(req,res)
 app.get("/setcarrito",function(req,res)
 {
 	//req.session.id=req.query.id;
-	productos.push(req.query)//agregamos el producto al arreglo
+	productos.push({id:req.query.id,cantidad:0})//agregamos el producto al arreglo
 	console.log(req.query);
 });
 
