@@ -46,7 +46,7 @@ app.get("/datos",function(req,res)
 app.get("/setTotal",function(req,res)
 {
 	totalcompra=req.query.total;
-}
+});
 
 app.get("/pago",function(req,res)
 {
