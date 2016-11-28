@@ -22,7 +22,9 @@
           <div class="col-xs">
             <nav class="breadcrumb">
             <a class="breadcrumb-item" href="catalogo">Todos los productos</a>
-              <span class="breadcrumb-item active" href="#">Carrito</span>
+            <a class="breadcrumb-item" href="carrito">Carrito</a>
+            <a class="breadcrumb-item" href="datos">Datos Personales</a>
+              <span class="breadcrumb-item active">Metodo de pago</span>
             </nav>
           </div>
         </div>
@@ -33,20 +35,47 @@
   
 <!-- inicio -->
 
-<!-- Carrito container -->
+<!-- formulario-container -->
 
-
-
-<div class="carrito-container">
+<div class="formulario-container ">
   <div class="container">
-    <div id="productos" class="row" >
+    <div class="producto-carrito card" data-example-id="">
+      <form>
+      <div class="form-group row">
+        <label for="numero-pago" class="col-xs-12 col-md-2 col-form-label">Numéro de Tarjeta</label>
+        <div class="col-xs-12 col-md-10">
+          <input class="form-control" type="number" id="numero-pago" name="numero-pago">
+        </div>
+      </div>
 
-    </div>   
-  </div>
+      <div class="form-group row">
+          <label for="nombre-datos" class="col-xs-12 col-md-2 col-form-label">Nombre del titular de la tarjeta</label>
+          <div class="col-xs-12 col-md-10">
+          <input type="text" class="form-control" id="nombre-datos" name="nombre-datos" aria-describedby="nombre-help" placeholder="Escribe tu nombre" required>
+          <small id="nombre-help" class="form-text text-muted"> Como aparece en la tarjeta</small>
+          </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="vencimiento-pago" class="col-xs-12 col-md-2 col-form-label">Fecha de vencimiento</label>
+        <div class="col-xs-12 col-md-10">
+          <input class="form-control" type="month" id="vencimiento-pago">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-xs-12 text-xs-center">
+          <button type="submit" class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+      </form>
+      </div>
+        </div>  
+
 </div>
 
 
-<!-- / Carrito container -->
+<!-- / formulario-container -->
 
 
 
@@ -54,7 +83,7 @@
 
   <!-- footer -->
   <footer id="footer-container">
-    <div class="container">
+    <div class="container ">
       <div class="row text-xs-center text-md-left">
         <div class="col-md-4">
           <form id="suscribeForm" action="#" > <!-- method=¨POST"-->
@@ -92,8 +121,9 @@
   <!-- /footer -->
  
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <%- include("js") -%>
-    <script src="/estatico/js/getcarrito.js"></script>
+<%- include("js") -%>
+
     <!-- JS -->
+
   </body>
 </html>

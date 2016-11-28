@@ -46,6 +46,11 @@ app.get("/datos",function(req,res)
 app.get("/setTotal",function(req,res)
 {
 	totalcompra=req.query.total;
+}
+
+app.get("/pago",function(req,res)
+{
+	res.render("pago"); 
 });
 
 server.listen(8080,function(){
