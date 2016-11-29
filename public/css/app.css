@@ -154,4 +154,10 @@ a:hover{
 .cardgracias
 {
 	background-color: #DAECED;
+	margin-bottom: 1em;
+}
+
+#gracias-container 
+{
+	margin-bottom: 1em;
 }
