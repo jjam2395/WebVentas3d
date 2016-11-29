@@ -52,11 +52,13 @@ app.get("/setTotal",function(req,res)
 app.get("/setDatos",function(req,res)
 {
 	datosPersonales=req.query;
+	console.log(datosPersonales);
 });
 
 app.get("/setTarjeta",function(req,res)
 {
 	datosTarjeta=req.query;
+	console.log(datosTarjeta);
 });
 
 app.get("/pago",function(req,res)
@@ -67,6 +69,13 @@ app.get("/pago",function(req,res)
 app.get("/gracias",function(req,res)
 {
 	res.render("gracias");
+});
+
+app.get("/datosCompra",function(req,res)
+{
+	jsonfinal=[datosPersonales,datosTarjeta,totalcompra];
+	res.header("Access-Control-Allow-Origin","*");
+  	res.send(jsonfinal);
 });
 
 server.listen(8080,function(){

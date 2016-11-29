@@ -1,0 +1,9 @@
+$(document).ready(function()
+{
+	$.getJSON('http://localhost:8080/datosCompra',{},function(datos)
+	{
+		console.log(datos[2]);
+		console.log(datos[0].nombre);
+		console.log(datos[1].vence);
+	});
+});
