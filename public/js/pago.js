@@ -8,7 +8,7 @@ $(document).ready(function() {
 				vence:$("#vencimiento-pago").val()
 			};
 
-			$.get('http://localhost:8080/setTarjeta',datos,function(datos,status)
+			$.get('http://192.168.43.67:8080/setTarjeta',datos,function(datos,status)
 			{
 				alert(status);
 			});	

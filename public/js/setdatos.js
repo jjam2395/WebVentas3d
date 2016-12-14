@@ -14,7 +14,7 @@ $(document).ready(function() {
 			comentario:$("#comentario-datos").val()
 			};
 
-		$.get('http://localhost:8080/setDatos',datos,function(datos,status)
+		$.get('http://192.168.43.67:8080/setDatos',datos,function(datos,status)
 			{
 				alert(status);
 			});	

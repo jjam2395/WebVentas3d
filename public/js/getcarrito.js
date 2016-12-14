@@ -21,7 +21,7 @@ $(document).ready(function()
   // console.log(indice);
 
 
-  $.getJSON('http://localhost:8080/getcarrito', {}, function(prod) {//solicitar el id de los productos elegidos
+  $.getJSON('http://192.168.43.67:8080/getcarrito', {}, function(prod) {//solicitar el id de los productos elegidos
         console.log("Success");
 
         //$("#datos").val(JSON.stringify(productos).replace("\"", "").replace("\"", ""));
@@ -80,7 +80,7 @@ $(document).ready(function()
               </div>`;
 
         document.getElementById("productos").innerHTML=html;
-        $.get('http://localhost:8080/setTotal',{total:total});
+        $.get('http://192.168.43.67:8080/setTotal',{total:total});
       });
 });
 

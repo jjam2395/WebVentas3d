@@ -17,7 +17,7 @@ $(document).ready(function()
       }
     };
 
-	$.getJSON('http://localhost:8080/datosCompra',{},function(datos)
+	$.getJSON('http://192.168.43.67:8080/datosCompra',{},function(datos)
 	{
 		console.log("Success");
 
@@ -45,7 +45,7 @@ $(document).ready(function()
 		document.getElementById("total").innerHTML=total;
 	});
 
-	$.getJSON('http://localhost:8080/getcarrito',{},function(prod)
+	$.getJSON('http://192.168.43.67:8080/getcarrito',{},function(prod)
 	{
 		var html=``;
         for (var a=0; a<prod.length;a++)
