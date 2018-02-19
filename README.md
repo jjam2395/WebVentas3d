@@ -12,4 +12,4 @@ Comandos para instalar las dependencias:
  
 Preview:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uy3wcpVGJDg" frameborder="0" allowfullscreen></iframe>
+[![Demo](https://img.youtube.com/vi/uy3wcpVGJDg/0.jpg)](https://www.youtube.com/watch?v=uy3wcpVGJDg)
