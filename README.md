@@ -1,5 +1,6 @@
 # WebVentas3d
-Página web de ventas desarrollada con Node.js
+Proyecto que simula la página web de una empresa (Prosoft Printer), qué se dedica a la venta de productos impresos en 3D.
+
 
 Comandos para instalar las dependencias:
 
